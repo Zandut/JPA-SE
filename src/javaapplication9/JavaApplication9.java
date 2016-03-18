@@ -26,7 +26,7 @@ public class JavaApplication9 {
         
         b.setProductCode(a);
         cont2.create(b);
-        
+        System.out.println("hahahah");
         
     }
     
