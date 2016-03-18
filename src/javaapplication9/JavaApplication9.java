@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package javaapplication9;
 
 import javaapplication9.controller.ManufacturerJpaController;
@@ -8,6 +13,10 @@ import javaapplication9.models.Product;
 import javaapplication9.models.ProductCode;
 import javax.persistence.Persistence;
 
+/**
+ *
+ * @author PRAKTIKUM
+ */
 public class JavaApplication9 {
 
     /**
@@ -26,7 +35,7 @@ public class JavaApplication9 {
         
         b.setProductCode(a);
         cont2.create(b);
-        
+        System.out.println("hahahah");
         
     }
     
