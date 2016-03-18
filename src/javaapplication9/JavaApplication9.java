@@ -4,14 +4,7 @@
  * and open the template in the editor.
  */
 package javaapplication9;
-
-import javaapplication9.controller.ManufacturerJpaController;
-import javaapplication9.controller.ProductCodeJpaController;
-import javaapplication9.controller.ProductJpaController;
-import javaapplication9.models.Manufacturer;
-import javaapplication9.models.Product;
-import javaapplication9.models.ProductCode;
-import javax.persistence.Persistence;
+// disuruh adli
 
 /**
  *
