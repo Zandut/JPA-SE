@@ -27,6 +27,10 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "MANUFACTURER")
 @XmlRootElement
 @NamedQueries({
+    //kita buat query kita sendiri
+    @NamedQuery(name = "Manufacturer.findByLikeName", query = "SELECT m FROM Manufacturer m WHERE m.name LIKE :name"),
+    
+    
     @NamedQuery(name = "Manufacturer.findAll", query = "SELECT m FROM Manufacturer m"),
     @NamedQuery(name = "Manufacturer.findByManufacturerId", query = "SELECT m FROM Manufacturer m WHERE m.manufacturerId = :manufacturerId"),
     @NamedQuery(name = "Manufacturer.findByName", query = "SELECT m FROM Manufacturer m WHERE m.name = :name"),

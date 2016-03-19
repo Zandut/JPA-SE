@@ -128,6 +128,25 @@ public class ManufacturerJpaController implements Serializable {
             em.close();
         }
     }
+    
+    //custom query
+    //ambil query yg buat d buat di class Manufacturer
+    //@NamedQuery(name = "Manufacturer.findByLikeName", query = "SELECT * FROM manufacturer m WHERE m.name LIKE :name"),
+    public List<Manufacturer> findManufacturerByName(String name)
+    {
+        EntityManager em = getEntityManager();
+        try
+        {
+            Query q = em.createNamedQuery("Manufacturer.findByLikeName");
+            q.setParameter("name", "%"+name+"%");
+            return q.getResultList();
+        } finally 
+        {
+            em.close();
+        }
+                
+        
+    }
 
     public int getManufacturerCount() {
         EntityManager em = getEntityManager();
